@@ -163,8 +163,8 @@ export const REVIEW_TAGS = [
   { id: 'all', labelEn: 'All Reviews', labelSq: 'Të Gjitha', count: 76 },
   { id: 'souflaki', labelEn: 'Souflaki & Pita', labelSq: 'Sufllaqe & Pitë', count: 28 },
   { id: 'gyros', labelEn: 'Gyros Platter', labelSq: 'Pjatë Gyros', count: 19 },
-  { id: 'pizza', labelEn: 'Stone Oven Pizza', labelSq: 'Pica në Furrë', count: 24 },
-  { id: 'grill', labelEn: 'Charcoal BBQ', labelSq: 'Zgara & Pulë', count: 18 },
+  { id: 'pizza', labelEn: 'Pizza', labelSq: 'Pica', count: 24 },
+  { id: 'grill', labelEn: 'Grill & Chicken', labelSq: 'Zgara & Pulë', count: 18 },
   { id: 'crepes', labelEn: 'Sweet Crepes', labelSq: 'Krepa të Ëmbël', count: 12 },
   { id: 'service', labelEn: 'Service & Seating', labelSq: 'Shërbimi & Ambienti', count: 22 }
 ];
