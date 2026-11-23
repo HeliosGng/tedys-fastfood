@@ -14,8 +14,8 @@ export const TRANSLATIONS = {
     hero: {
       ratingBadge: '4.0 ★ (76 Google Reviews)',
       priceBadge: 'ALL 1–500 per person',
-      headline: "Authentic Charcoal Grill, Souvlakis & Artisan Pizza",
-      subheadline: 'Crafted with passion in Tirana. Juicy rotisserie gyros, double-stuffed skepasti, flame-grilled chicken, hot stone pizzas, and decadent sweet crepes.',
+      headline: 'Fast-Food, Grill, Pizzeria, Creperie',
+      subheadline: 'Crafted with passion in Tirana. Juicy rotisserie gyros, double-stuffed skepasti, grilled chicken, fresh pizzas, and decadent sweet crepes.',
       orderNow: 'Order on WhatsApp',
       callOrder: 'Call to Order',
       reserveTable: 'Reserve a Table',
@@ -29,7 +29,7 @@ export const TRANSLATIONS = {
     },
     menu: {
       title: 'Our Flame & Grill Menu',
-      subtitle: 'From signature Albanian-Greek souvlakis to fire-baked pizzas and loaded skepasti sandwiches. Every item prepared fresh to order.',
+      subtitle: 'From signature Albanian-Greek souvlakis to freshly baked pizzas and loaded skepasti sandwiches. Every item prepared fresh to order.',
       searchPlaceholder: 'Search dishes, ingredients (e.g. gyro, pizza, crepes)...',
       customize: 'Customize & Add',
       quickAdd: 'Add to Cart',
@@ -126,7 +126,7 @@ export const TRANSLATIONS = {
       viewPost: 'View on Instagram'
     },
     footer: {
-      tagline: 'Tedy\'s Fast Food & Grill — Authentic Mediterranean fast food, juicy charcoal meats, fresh pizzas & sweet crepes in Tirana.',
+      tagline: 'Tedy\'s Fast Food & Grill — Authentic Mediterranean fast food, grilled meats, fresh pizzas & sweet crepes in Tirana.',
       rights: 'All rights reserved.',
       quickLinks: 'Quick Links',
       openingNotice: 'Always hot, always freshly grilled.',
@@ -148,8 +148,8 @@ export const TRANSLATIONS = {
     hero: {
       ratingBadge: '4.0 ★ (76 Vlerësime në Google)',
       priceBadge: '1–500 ALL për person',
-      headline: 'Zgarë me Qymyr, Sufllaqe Autentike & Pica në Furrë',
-      subheadline: 'Përgatitur me pasion në Tiranë. Mish i lëngshëm në hell, skepasti me dyfeqe djathi, pulë zgare, pica furre krokante dhe krepa të ëmbël me Nutella.',
+      headline: 'Fast-Food, Zgarë, Pizzeri, Kreperi',
+      subheadline: 'Përgatitur me pasion në Tiranë. Mish i lëngshëm në hell, skepasti me dyfeqe djathi, pulë zgare, pica të freskëta dhe krepa të ëmbël me Nutella.',
       orderNow: 'Porosit me WhatsApp',
       callOrder: 'Telefono për Porosi',
       reserveTable: 'Rezervo Tavolinë',
@@ -163,7 +163,7 @@ export const TRANSLATIONS = {
     },
     menu: {
       title: 'Menuja Jonë e Zgarës & Gatimit',
-      subtitle: 'Nga sufllaqet tradicionale te picat në furrë guri dhe skepastitë e pasura. Çdo gatim përgatitet i freskët në çast.',
+      subtitle: 'Nga sufllaqet tradicionale te picat e freskëta dhe skepastitë e pasura. Çdo gatim përgatitet i freskët në çast.',
       searchPlaceholder: 'Kërko ushqime, përbërës (p.sh. sufllaqe, pica, krepa)...',
       customize: 'Përshtat & Shto',
       quickAdd: 'Shto në Shportë',
@@ -260,7 +260,7 @@ export const TRANSLATIONS = {
       viewPost: 'Shiko në Instagram'
     },
     footer: {
-      tagline: 'Tedy\'s Fast Food & Grill — Fast food autentik mesdhetar, zgarë me qymyr, pica furre guri dhe krepa të ëmbël në Tiranë.',
+      tagline: 'Tedy\'s Fast Food & Grill — Fast food autentik mesdhetar, mishra në zgarë, pica të freskëta dhe krepa të ëmbël në Tiranë.',
       rights: 'Të gjitha të drejtat të rezervuara.',
       quickLinks: 'Lidhje të Shpejta',
       openingNotice: 'Gjithmonë e ngrohtë, gjithmonë e sapopjekur.',
