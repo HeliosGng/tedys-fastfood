@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data/translations';
 import { googleMapsPhotoImg } from '../data/menu';
-import { MapPin, Clock, Phone, Navigation, Copy, Check, ExternalLink, Instagram, Share2, Compass, Camera } from 'lucide-react';
+import { MapPin, Clock, Phone, Navigation, Copy, Check, ExternalLink, Instagram, Facebook, ShoppingBag, Compass, Camera } from 'lucide-react';
 
 interface LocationAndHoursProps {
   lang: Language;
@@ -154,18 +154,33 @@ export const LocationAndHours: React.FC<LocationAndHoursProps> = ({ lang }) => {
             </div>
           </div>
 
-          {/* Phone & Instagram Contact Card */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Phone, Instagram, Facebook & Wolt Contact Cards */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4">
             <a
               href="tel:+355686073000"
-              className="p-4 rounded-2xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 transition-colors flex items-center gap-3 group"
+              className="p-3.5 sm:p-4 rounded-2xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 transition-colors flex items-center gap-2.5 sm:gap-3 group"
             >
-              <div className="w-10 h-10 rounded-xl bg-orange-600/20 text-orange-500 flex items-center justify-center shrink-0">
-                <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-600/20 text-orange-500 flex items-center justify-center shrink-0">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
               </div>
-              <div>
-                <span className="text-xs text-neutral-400 block">{t.location.phoneTitle}</span>
-                <span className="text-sm font-bold text-white font-mono">{t.location.phoneNumber}</span>
+              <div className="min-w-0">
+                <span className="text-[11px] sm:text-xs text-neutral-400 block truncate">{t.location.phoneTitle}</span>
+                <span className="text-xs sm:text-sm font-bold text-white font-mono truncate block">{t.location.phoneNumber}</span>
+              </div>
+            </a>
+
+            <a
+              href="https://wolt.com/en/alb/tirana/restaurant/tedys-grill-80381"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 sm:p-4 rounded-2xl bg-neutral-900 border border-neutral-800 hover:border-sky-500/50 transition-colors flex items-center gap-2.5 sm:gap-3 group"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-sky-600/20 text-sky-400 flex items-center justify-center shrink-0">
+                <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="min-w-0">
+                <span className="text-[11px] sm:text-xs text-neutral-400 block">Wolt</span>
+                <span className="text-xs sm:text-sm font-bold text-white truncate block">Tedy's Grill</span>
               </div>
             </a>
 
@@ -173,14 +188,29 @@ export const LocationAndHours: React.FC<LocationAndHoursProps> = ({ lang }) => {
               href="https://www.instagram.com/tedysgrill/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 rounded-2xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 transition-colors flex items-center gap-3 group"
+              className="p-3.5 sm:p-4 rounded-2xl bg-neutral-900 border border-neutral-800 hover:border-pink-500/50 transition-colors flex items-center gap-2.5 sm:gap-3 group"
             >
-              <div className="w-10 h-10 rounded-xl bg-pink-600/20 text-pink-500 flex items-center justify-center shrink-0">
-                <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-pink-600/20 text-pink-500 flex items-center justify-center shrink-0">
+                <Instagram className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
               </div>
-              <div>
-                <span className="text-xs text-neutral-400 block">Instagram</span>
-                <span className="text-sm font-bold text-white">@tedysgrill</span>
+              <div className="min-w-0">
+                <span className="text-[11px] sm:text-xs text-neutral-400 block">Instagram</span>
+                <span className="text-xs sm:text-sm font-bold text-white truncate block">@tedysgrill</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.facebook.com/tedysgrill/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 sm:p-4 rounded-2xl bg-neutral-900 border border-neutral-800 hover:border-blue-500/50 transition-colors flex items-center gap-2.5 sm:gap-3 group"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-600/20 text-blue-500 flex items-center justify-center shrink-0">
+                <Facebook className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="min-w-0">
+                <span className="text-[11px] sm:text-xs text-neutral-400 block">Facebook</span>
+                <span className="text-xs sm:text-sm font-bold text-white truncate block">@tedysgrill</span>
               </div>
             </a>
           </div>
