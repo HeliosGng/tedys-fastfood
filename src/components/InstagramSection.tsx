@@ -29,8 +29,8 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ lang }) => {
     {
       id: 'ig-2',
       image: pizzaImg,
-      captionEn: 'Bubbly melted mozzarella and blistered crust straight from our oven 🍕 #woodfiredpizza',
-      captionSq: 'Mocarelë e shkrirë dhe kore kërcitëse sapo dalë nga furra 🍕 #pica #tirana',
+      captionEn: 'Bubbly melted mozzarella and crispy crust made fresh to order 🍕 #pizza #tirana',
+      captionSq: 'Mocarelë e shkrirë dhe kore kërcitëse e përgatitur e freskët 🍕 #pica #tirana',
       likes: 312,
       comments: 24
     },
@@ -45,8 +45,8 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ lang }) => {
     {
       id: 'ig-4',
       image: restaurantImg,
-      captionEn: 'Fresh charcoal grill fired up daily with cozy indoor & outdoor seating 🔥',
-      captionSq: 'Zgara me qymyr ndizet çdo ditë, me ambient të rehatshëm brenda dhe jashtë 🔥',
+      captionEn: 'Fresh grill fired up daily with cozy indoor & outdoor seating 🔥',
+      captionSq: 'Zgara jonë punon çdo ditë, me ambient të rehatshëm brenda dhe jashtë 🔥',
       likes: 184,
       comments: 12
     },
