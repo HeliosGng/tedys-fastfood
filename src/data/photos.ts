@@ -66,7 +66,7 @@ export const SITE_PHOTOS = {
 };
 
 // ============================================================================
-// 2. GALERIA NË KREU (12 FOTO: 8 të Vendit + 4 të Ushqimeve)
+// 2. GALERIA NË KREU (14 FOTO)
 // ============================================================================
 export const GALLERY_PHOTO_URLS = {
   photo1_place: 'https://scontent.ftia4-1.fna.fbcdn.net/v/t1.15752-9/914056720_1638215574435958_6414909820023318752_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=0VhH5dsagf8Q7kNvwHc7nYP&_nc_oc=AdqopNZjlnzxYtCd6VJ-JnueRDApB4TLIxnDavWd3n1p3H0jeazD5iDUwflugjR5zBE&_nc_zt=23&_nc_ht=scontent.ftia4-1.fna&_nc_ss=7baaf&oh=03_Q7cD6wGK2Uf0ef4Inn5O1B_s9FvcGJ_JxzxP4R_QOqw9dQtvLQ&oe=6B257F43',  // Vendi 1 (Rreshti 1 - Majtas)
@@ -81,6 +81,8 @@ export const GALLERY_PHOTO_URLS = {
   photo10_place: 'https://scontent.ftia5-1.fna.fbcdn.net/v/t1.15752-9/912538203_1399877682221385_9093311085034811325_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=VEuvvinpyloQ7kNvwFpgGmr&_nc_oc=Adp4PXrcvVip9bsSvLJBZvBrwuEvbFLvmpyTSpZ5ch8vbvnRLpDbhn53dtfd-rWB0Ho&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ftia5-1.fna&_nc_ss=7a22e&oh=03_Q7cD6wFWSZP88g-kUStOAaJq42ImCiyB2d7YXla_GuNsEmtatQ&oe=6B256F98', // Vendi 8 (Rreshti 5 - Djathtas)
   photo11_food: 'https://scontent.ftia5-1.fna.fbcdn.net/v/t1.15752-9/914760250_2061185654411877_8697184677776571231_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=bP9JPCaEGMUQ7kNvwFlkgJX&_nc_oc=Adqz3klQqsaV8H2Pu_t7PqAzC8vxVrHaKzeRidsLcgMSJAihE5ox_Lj4GTG4t_doqLY&_nc_zt=23&_nc_ht=scontent.ftia5-1.fna&_nc_ss=7baaf&oh=03_Q7cD6wH-P9vgnlhadcfRm6eBlWPO6JkHNSvQo9W4qVZogX2gMw&oe=6B2582BF',  // Ushqim 3 (Rreshti 6 - Majtas)
   photo12_food: 'https://scontent.ftia4-1.fna.fbcdn.net/v/t1.15752-9/912823654_1488969806439926_2208114933225865169_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=PI0JNyqjTJ8Q7kNvwEzPmR-&_nc_oc=Ado4_oqDHFDoXoQ8xW2llmIZ2kjqu49nHl3VE10aruxbUR7cY-MDpqnE33otteI8NrM&_nc_zt=23&_nc_ht=scontent.ftia4-1.fna&_nc_ss=7baaf&oh=03_Q7cD6wFmKwHSZ7RKvo8gYvGa81Vgf_IC5NruAzf4hALRsaN4SA&oe=6B2566B5',  // Ushqim 4 (Rreshti 6 - Djathtas)
+  photo13_place: 'https://scontent.ftia4-1.fna.fbcdn.net/v/t39.30808-6/923468657_4523601911235182_8159174831408738107_n.avif?stp=dst-jpg_tt6&cstp=mx1440x1152&ctp=s1440x1152&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=l_4em992Yx0Q7kNvwH4kkLd&_nc_oc=AdrRqnarhpYbtL63WxeHF1FVfwDVa0ZjKwcEA8cYAmez6kh6TTtx77EoB-1pnl0ue00&_nc_zt=23&_nc_ht=scontent.ftia4-1.fna&_nc_gid=oo1OFBzigBGM14pYzD5S-g&_nc_ss=7b289&oh=00_AQSeBDPvcUH0HO1eyPhEjj0yn50mTDCzeZe1sAvLZihc2Q&oe=6B0A1C2A', // Foto 13 (Rreshti 7 - Majtas)
+  photo14_place: 'https://scontent.ftia4-1.fna.fbcdn.net/v/t39.30808-6/914362812_4523601881235185_4132134855053492962_n.avif?stp=dst-jpg_tt6&cstp=mx1440x1152&ctp=s1440x1152&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=M3ZPD3h8a_QQ7kNvwFkWuqF&_nc_oc=AdpTv55PB7aplS6DcGdY3o9bSofndNOKJKFf76luuecWNQvekG0rSAY7aOQSHVd0XC0&_nc_zt=23&_nc_ht=scontent.ftia4-1.fna&_nc_gid=WaILq3aiNxrB8vYI4P1y8w&_nc_ss=7b289&oh=00_AQTc2s6nbZwQry4b0IacWSHSM2DkPxb3tQzlO-TZzjThvg&oe=6B0A244D', // Foto 14 (Rreshti 7 - Djathtas)
 };
 
 export const GALLERY_PHOTOS: { id: string; src: string; alt: string }[] = [
@@ -96,6 +98,8 @@ export const GALLERY_PHOTOS: { id: string; src: string; alt: string }[] = [
   { id: 'g10', src: resolveUrl(GALLERY_PHOTO_URLS.photo10_place, SITE_PHOTOS.restaurantHero), alt: "Tedy's Fast Food & Grill" },
   { id: 'g11', src: resolveUrl(GALLERY_PHOTO_URLS.photo11_food, pizzaImg), alt: "Tedy's Fast Food & Grill" },
   { id: 'g12', src: resolveUrl(GALLERY_PHOTO_URLS.photo12_food, skepastiImg), alt: "Tedy's Fast Food & Grill" },
+  { id: 'g13', src: resolveUrl(GALLERY_PHOTO_URLS.photo13_place, SITE_PHOTOS.exteriorMain), alt: "Tedy's Fast Food & Grill" },
+  { id: 'g14', src: resolveUrl(GALLERY_PHOTO_URLS.photo14_place, SITE_PHOTOS.restaurantHero), alt: "Tedy's Fast Food & Grill" },
 ];
 
 // ============================================================================
