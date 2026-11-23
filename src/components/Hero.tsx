@@ -1,9 +1,9 @@
 import React from 'react';
 import { AppSection, Language } from '../types';
 import { TRANSLATIONS } from '../data/translations';
-import { SITE_PHOTOS, CATEGORY_PHOTOS, getProductPhoto } from '../data/photos';
+import { SITE_PHOTOS, CATEGORY_PHOTOS, GALLERY_PHOTOS, getProductPhoto } from '../data/photos';
 
-const googleMapsPhotoImg = SITE_PHOTOS.googleMapsPhoto;
+const heroCardImg = GALLERY_PHOTOS[0]?.src || SITE_PHOTOS.googleMapsPhoto;
 const homepageBgImg = SITE_PHOTOS.homepageBackground;
 const souvlakiImg = getProductPhoto('suflaqe-pite-giro-pule', CATEGORY_PHOTOS.suflaqe);
 const pizzaImg = getProductPhoto('pizza-speciale-tedys', CATEGORY_PHOTOS.pizzaDiavolaProsciutto);
@@ -19,6 +19,8 @@ import {
   Clock,
   Utensils,
   Instagram,
+  Facebook,
+  ShoppingBag,
   UtensilsCrossed,
   Calendar,
   MessageSquare,
@@ -124,11 +126,11 @@ export const Hero: React.FC<HeroProps> = ({
               <h1 className="text-xl xs:text-2xl sm:text-4xl lg:text-5xl font-extrabold sm:font-black tracking-tight text-white font-display leading-[1.12] text-balance">
                 {lang === 'en' ? (
                   <>
-                    Authentic Charcoal <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-amber-500">Grill, Souvlakis</span> & Artisan Pizza
+                    Fast-Food, <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-amber-500">Grill, Pizzeria</span>, Creperie
                   </>
                 ) : (
                   <>
-                    Zgarë me Qymyr, <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-amber-500">Sufllaqe Autentike</span> & Pica në Furrë
+                    Fast-Food, <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-amber-500">Zgarë, Pizzeri</span>, Kreperi
                   </>
                 )}
               </h1>
@@ -185,7 +187,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <span className="truncate">{t.hero.callOrder}</span>
               </a>
 
-              {/* 4. Directions & Instagram */}
+              {/* 4. Directions */}
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=41.3293205,19.7827167"
                 target="_blank"
@@ -196,16 +198,41 @@ export const Hero: React.FC<HeroProps> = ({
                 <Navigation className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-500" />
                 <span className="truncate">{t.hero.getDirections}</span>
               </a>
+            </div>
+
+            {/* Social & Delivery Platforms: Wolt, Instagram, Facebook */}
+            <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-1.5 sm:gap-2.5">
+              <a
+                href="https://wolt.com/en/alb/tirana/restaurant/tedys-grill-80381"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 px-2 sm:py-2.5 sm:px-4 rounded-xl bg-neutral-900 border border-sky-500/35 hover:border-sky-400 text-neutral-200 hover:text-white font-semibold text-[11px] sm:text-xs transition-all flex items-center justify-center gap-1.5"
+                title="Order Tedy's Grill on Wolt"
+              >
+                <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-sky-400 shrink-0" />
+                <span className="truncate">Wolt</span>
+              </a>
 
               <a
                 href="https://www.instagram.com/tedysgrill/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="col-span-2 sm:col-span-1 py-2 px-2.5 sm:py-3 sm:px-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 text-neutral-300 hover:text-white font-medium text-[11px] sm:text-sm transition-all flex items-center justify-center gap-1.5"
+                className="py-2 px-2 sm:py-2.5 sm:px-4 rounded-xl bg-neutral-900 border border-pink-500/30 hover:border-pink-500/70 text-neutral-200 hover:text-white font-semibold text-[11px] sm:text-xs transition-all flex items-center justify-center gap-1.5"
                 title="Follow @tedysgrill on Instagram"
               >
-                <Instagram className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500" />
-                <span className="truncate">@tedysgrill</span>
+                <Instagram className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 shrink-0" />
+                <span className="truncate">Instagram</span>
+              </a>
+
+              <a
+                href="https://www.facebook.com/tedysgrill/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 px-2 sm:py-2.5 sm:px-4 rounded-xl bg-neutral-900 border border-blue-500/30 hover:border-blue-500/70 text-neutral-200 hover:text-white font-semibold text-[11px] sm:text-xs transition-all flex items-center justify-center gap-1.5"
+                title="Follow Tedy's Grill on Facebook"
+              >
+                <Facebook className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-500 shrink-0" />
+                <span className="truncate">Facebook</span>
               </a>
             </div>
 
@@ -218,8 +245,8 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-xl group">
                 <div className="aspect-[16/9] sm:aspect-[4/3] w-full overflow-hidden bg-neutral-950 relative">
                   <img
-                    src={googleMapsPhotoImg}
-                    alt="Tedy's Fast Food & Grill official Google Maps photo"
+                    src={heroCardImg}
+                    alt="Tedy's Fast Food & Grill Tirana"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -232,7 +259,7 @@ export const Hero: React.FC<HeroProps> = ({
                     className="absolute top-2 right-2 sm:top-3 sm:right-3 text-[9px] sm:text-[11px] bg-black/70 hover:bg-black text-white/90 backdrop-blur-md px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg border border-white/10 transition-colors flex items-center gap-1"
                   >
                     <MapPin className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-orange-400" />
-                    <span>Google Maps Photo</span>
+                    <span>Google Maps</span>
                   </a>
 
                   <div className="absolute bottom-2.5 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
@@ -243,7 +270,7 @@ export const Hero: React.FC<HeroProps> = ({
                       Tedy's Fast Food & Grill
                     </div>
                     <div className="text-[10px] sm:text-xs text-neutral-300 mt-0.5 truncate">
-                      {lang === 'en' ? 'Charcoal BBQ, Sufllaqe & Indoor/Outdoor Seating' : 'Zgarë me Qymyr, Sufllaqe & Ambient Brenda/Jashtë'}
+                      {lang === 'en' ? 'Grill, Sufllaqe & Indoor/Outdoor Seating' : 'Zgarë, Sufllaqe & Ambient Brenda/Jashtë'}
                     </div>
                   </div>
                 </div>
