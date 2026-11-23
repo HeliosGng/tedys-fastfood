@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppSection, Language } from '../types';
 import { TRANSLATIONS } from '../data/translations';
-import { Phone, MapPin, Clock, Instagram, Navigation, Flame } from 'lucide-react';
+import { Phone, MapPin, Clock, Instagram, Facebook, ShoppingBag, Navigation, Flame } from 'lucide-react';
 
 interface FooterProps {
   lang: Language;
@@ -120,7 +120,17 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenCart, onNavigate }) 
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
               {lang === 'en' ? 'Social & Navigation' : 'Rrjetet & Harta'}
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-2">
+              <a
+                href="https://wolt.com/en/alb/tirana/restaurant/tedys-grill-80381"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 p-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-850 border border-neutral-800 text-neutral-200 transition-colors"
+              >
+                <ShoppingBag className="w-4 h-4 text-sky-400 shrink-0" />
+                <span className="truncate">Wolt</span>
+              </a>
+
               <a
                 href="https://www.instagram.com/tedysgrill/"
                 target="_blank"
@@ -128,7 +138,17 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenCart, onNavigate }) 
                 className="flex items-center gap-2 p-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-850 border border-neutral-800 text-neutral-200 transition-colors"
               >
                 <Instagram className="w-4 h-4 text-pink-500 shrink-0" />
-                <span>Instagram @tedysgrill</span>
+                <span className="truncate">Instagram</span>
+              </a>
+
+              <a
+                href="https://www.facebook.com/tedysgrill/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 p-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-850 border border-neutral-800 text-neutral-200 transition-colors"
+              >
+                <Facebook className="w-4 h-4 text-blue-500 shrink-0" />
+                <span className="truncate">Facebook</span>
               </a>
 
               <a
@@ -138,7 +158,7 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenCart, onNavigate }) 
                 className="flex items-center gap-2 p-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-850 border border-neutral-800 text-neutral-200 transition-colors"
               >
                 <Navigation className="w-4 h-4 text-orange-500 shrink-0" />
-                <span>Google Maps Directions</span>
+                <span className="truncate">Google Maps</span>
               </a>
             </div>
           </div>
